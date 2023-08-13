@@ -1,0 +1,435 @@
+/*-------------The beginning of the reset-------------------*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    /* font-size: 100%; */
+    vertical-align: baseline;
+    background: transparent;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* font-size: inherit; */
+    font-weight: 400;
+}
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+body,
+html {
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    min-width: 320px;
+    width: 100%;
+}
+body {
+    min-height: 100vh;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+ul li {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    outline: none;
+    text-decoration: none;
+}
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+button {
+    cursor: pointer;
+}
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+input,
+select {
+    vertical-align: middle;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+img {
+    vertical-align: top;
+}
+/*-------------The end of the reset-------------*/
+
+.navbar {
+    height: 50px;
+    background-color: rgba(102, 16, 83, 0.698);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.list {
+    display: flex;
+    align-items: center;
+}
+.listItem {
+    margin-right: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.card {
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 7px 5px rgba(0, 0, 0, 0.64);
+    box-shadow: 5px 5px 7px 5px rgba(0, 0, 0, 0.64);
+}
+.img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+.desc {
+    color: #333;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.cardButton {
+    border: none;
+    background-color: rgba(102, 16, 83, 0.698);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+}
+.postImg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.postTitle {
+    text-align: center;
+}
+
+.postDesc {
+    padding: 0 100px;
+    font-size: 24px;
+    font-weight: 300;
+    color: gray;
+    margin-top: 50px;
+}
+.postLongDesc {
+    padding: 100px;
+    padding-top: 50px;
+    font-size: 18px;
+    line-height: 24px;
+    color: gray;
+    margin-top: 50px;
+}
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    -webkit-box-shadow: 5px 5px 7px 5px rgba(0, 0, 0, 0.64);
+    box-shadow: 5px 5px 7px 5px rgba(0, 0, 0, 0.64);
+    width: 65%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginTitle {
+    position: absolute;
+    top: 150px;
+    color: lightgray;
+}
+.left,
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+.center {
+    /* height: 100%; */
+    align-self: stretch;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    width: 0.5px;
+    height: 70%;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+.or {
+    background-color: #fff;
+    color: gray;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    padding: 10px;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+.loginButton {
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 300;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.google {
+    background-color: #df4930;
+}
+.facebook {
+    background-color: #507cc0;
+}
+.github {
+    background-color: #000000cb;
+}
+input {
+    width: 200px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+.submit {
+    width: 200px;
+    border: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(128, 0, 128, 0.656);
+    text-transform: uppercase;
+}
+.link {
+    color: inherit;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .home {
+        height: auto;
+    }
+    .wrapper {
+        flex-direction: column;
+        height: 90%;
+    }
+    .line {
+        width: 220px;
+        height: .5px;
+    }
+    .loginTitle {
+        display: none;
+    }
+    input, .submit {
+        width: 150px;
+    }
+}
